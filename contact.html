@@ -1,0 +1,86 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaceWalkers/Contact</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+ <div class="nav">
+  <nav>
+    <div class="page-title">
+      <h1>SpaceWalkers</h1>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a  href="#">Blog</a></li>
+      <li><a  href="contact.html">Contact</a></li>
+      <li><a  href="#">Sign In</a></li>
+    </ul>
+  </nav>
+</div>
+
+  <div class="container home">
+
+    <header class="intro">
+       <div>
+        <img src="img/main-header.png" class="head-img" alt="From space view of the planet">
+       </div>
+    </header>
+
+    <h1 class="contact-header">Contact Information & E-Magazine Subscription Form</h1>
+        <br>
+    <!-- Form section -->
+        <section class="form-section">
+          <form action="process.php" method="POST">
+            <div>
+              <label>First Name</label>
+              <input type="text" name="firstName">
+            </div>
+            <div>
+              <label>Last Name</label>
+              <input type="text" name="lastName">
+            </div>
+            <div>
+              <label>Email</label>
+              <input type="email" name="email">
+            </div>
+            <div>
+              <label>Gender</label>
+              <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label>Message</label>
+              <textarea name="message"></textarea>>
+            </div>
+            <br>
+            <input type="submit" name="Submit" value="Submit">
+          </form>
+
+          <div class = "contact-image">
+            <img src="img/sky.png" alt="girl working at a desk">
+          </div>
+
+        </section>
+
+    <footer>
+      <p>Copyright SpaceWalkers 2018</p>
+    </footer>
+
+  </div>
+</body>
+</html>

@@ -1,1 +1,26 @@
 // Mixins Here
+.centering(@j, @a) {
+    display: flex;
+    justify-content: @j;
+    align-content: @a;
+}
+
+.heading-img-mobile() {
+    height: auto;
+    width: 100%;
+}
+
+.sign-up-button-mixin(@color, @button-width) {
+    background-color: @color;
+    color: white;
+    width: @button-width;
+    height: 30px;
+    font-size: 2rem;
+    border-radius: 5px;
+    padding-top: 1%;
+
+    &:hover{
+        background-color: @hover-background;
+        color: @hover-font;
+    }
+}
